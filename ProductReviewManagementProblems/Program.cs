@@ -48,8 +48,10 @@ namespace ProductReviewManagementProblems
             //management.HavingRatingGreaterThan3WthProductId(productreviews);
             //Console.WriteLine("Retrive Record Having ProductId with Number of Count");
             //management.Retrive_Count_of_Records(productreviews);
-             Console.WriteLine("Retrive all ProductId");
-             management.Retrive_Count_Of_ProductID(productreviews);
+            // Console.WriteLine("Retrive all ProductId");
+             //management.Retrive_Count_Of_ProductID(productreviews);
+             Console.WriteLine("Skip 5 record");
+             management.Skip_Five_Records(productreviews);
         }
     }
 }
