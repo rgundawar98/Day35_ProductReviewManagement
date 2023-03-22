@@ -49,9 +49,11 @@ namespace ProductReviewManagementProblems
             //Console.WriteLine("Retrive Record Having ProductId with Number of Count");
             //management.Retrive_Count_of_Records(productreviews);
             // Console.WriteLine("Retrive all ProductId");
-             //management.Retrive_Count_Of_ProductID(productreviews);
-             Console.WriteLine("Skip 5 record");
-             management.Skip_Five_Records(productreviews);
+            //management.Retrive_Count_Of_ProductID(productreviews);
+            // Console.WriteLine("Skip 5 record");
+            //management.Skip_Five_Records(productreviews);
+            Console.WriteLine("Retrive productid and reviews from list");
+            management.Retrive_ProductId_And_Reviews(productreviews);
         }
     }
 }

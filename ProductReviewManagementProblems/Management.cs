@@ -58,5 +58,14 @@ namespace ProductReviewManagementProblems
                 Console.WriteLine("ProductId:"+record.ProductId+" UserId"+record.UserId+" Rating:"+record.Rating+" Review:"+record.Review+" isLike:"+record.isLike);
             }
         }
+
+        public void Retrive_ProductId_And_Reviews(List<ProductReview> listofrecord)
+        {
+            var recordData=listofrecord.Select(x=> new {productId=x.ProductId, Review=x.Review});
+            foreach(var record in recordData)
+            {
+                Console.WriteLine("ProductId:"+record.productId+" Review:"+record.Review);
+            }
+        }
     }
 }
