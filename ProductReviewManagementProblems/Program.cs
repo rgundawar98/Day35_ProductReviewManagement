@@ -12,7 +12,7 @@ namespace ProductReviewManagementProblems
             {
                 new ProductReview(){ProductId=1,UserId=1,Rating=5,Review="Good",isLike=true},
                 new ProductReview(){ProductId=2,UserId=1,Rating=5,Review="Good",isLike=true},
-                new ProductReview(){ProductId=3,UserId=2,Rating=5,Review="Bad",isLike=false},
+                new ProductReview(){ProductId=3,UserId=2,Rating=1,Review="Bad",isLike=false},
                 new ProductReview(){ProductId=4,UserId=3,Rating=4,Review="Good",isLike=true},
                 new ProductReview(){ProductId=5,UserId=3,Rating=2,Review="Good",isLike=true},
                 new ProductReview(){ProductId=6,UserId=2,Rating=1,Review="Good",isLike=true},
@@ -36,10 +36,14 @@ namespace ProductReviewManagementProblems
                 new ProductReview(){ProductId=24,UserId=3,Rating=4,Review="Good",isLike=true},
                 new ProductReview(){ProductId=25,UserId=2,Rating=5,Review="Good",isLike=true},
             };
-            foreach(var list in productreviews)
-            {
-                Console.WriteLine("ProdcutId:"+list.ProductId+"UserId:"+list.UserId+"Rating:"+list.Rating+"Review:"+list.Review+"isLike:"+list.isLike);
-            }
+            //foreach(var list in productreviews)
+            //{
+            //    Console.WriteLine("ProdcutId:"+list.ProductId+"UserId:"+list.UserId+"Rating:"+list.Rating+"Review:"+list.Review+"isLike:"+list.isLike);
+            //}
+
+            Management management = new Management();
+            Console.WriteLine("Top 3 Records Having High Rating");
+            management.Top_Record_Having_High_Rating(productreviews);
         }
     }
 }
