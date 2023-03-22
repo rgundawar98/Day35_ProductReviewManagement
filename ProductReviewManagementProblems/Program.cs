@@ -42,8 +42,10 @@ namespace ProductReviewManagementProblems
             //}
 
             Management management = new Management();
-            Console.WriteLine("Top 3 Records Having High Rating");
-            management.Top_Record_Having_High_Rating(productreviews);
+            //Console.WriteLine("Top 3 Records Having High Rating");
+            //management.Top_Record_Having_High_Rating(productreviews);
+            Console.WriteLine("Retrive Record Having Rating Greater Than 3 With ProductId ");
+            management.HavingRatingGreaterThan3WthProductId(productreviews);
         }
     }
 }

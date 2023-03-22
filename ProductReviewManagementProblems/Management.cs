@@ -18,5 +18,18 @@ namespace ProductReviewManagementProblems
                 Console.WriteLine("ProductId:"+record.ProductId+"UserId:"+record.UserId+"Rating:"+record.Rating);
             }
         }
+
+        public void HavingRatingGreaterThan3WthProductId(List<ProductReview> Reviews)
+        {
+            var recordData=(from Productreview in Reviews
+                            where (Productreview.ProductId == 1 && Productreview.Rating > 3)||
+                            (Productreview.ProductId == 4 && Productreview.Rating > 3) ||
+                            (Productreview.ProductId == 9 && Productreview.Rating > 3)
+                            select Productreview);
+            foreach(var record in recordData)
+            {
+                Console.WriteLine("ProductId:" + record.ProductId + " UserId:" + record.UserId+" Rating:"+record.Rating+" Review:"+record.Review+" isLike:"+record.isLike);
+            }
+        }
     }
 }

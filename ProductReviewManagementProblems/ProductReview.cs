@@ -13,6 +13,5 @@ namespace ProductReviewManagementProblems
         public double Rating { get; set; }
         public string Review { get; set; }
         public bool isLike { get; set; }
-
     }
 }
