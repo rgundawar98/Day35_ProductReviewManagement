@@ -67,5 +67,14 @@ namespace ProductReviewManagementProblems
                 Console.WriteLine("ProductId:"+record.productId+" Review:"+record.Review);
             }
         }
+
+        public void Retrive_Records_isLike_True(List<DataTable> listofrecord)
+        {
+            var records = listofrecord.Where(x => x.isLike==true).OrderBy(x=>x.isLike).ToList();
+            foreach(var record in records)
+            {
+                Console.WriteLine(record.isLike);
+            }
+        }
     }
 }

@@ -83,10 +83,12 @@ namespace ProductReviewManagementProblems
                 new DataTable(){ProductId=24,UserId=3,Rating=4,Review="Good",isLike=true},
                 new DataTable(){ProductId=25,UserId=2,Rating=5,Review="Good",isLike=true},
             };
-            foreach(var record in dataTables)
-            {
-                Console.WriteLine("ProductId:"+record.ProductId+" UserId:"+record.UserId+" Rating:"+record.Rating+" Review:"+record.Review+" isLike:"+record.isLike);
-            }
+            //foreach(var record in dataTables)
+            //{
+            //    Console.WriteLine("ProductId:"+record.ProductId+" UserId:"+record.UserId+" Rating:"+record.Rating+" Review:"+record.Review+" isLike:"+record.isLike);
+            //}
+            Console.WriteLine("Retrive records having isLike value is true");
+            management.Retrive_Records_isLike_True(dataTables);
         }
     }
 }
