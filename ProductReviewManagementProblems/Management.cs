@@ -76,5 +76,11 @@ namespace ProductReviewManagementProblems
                 Console.WriteLine(record.isLike);
             }
         }
+
+        public void Average_Rating_Of_Each_ProductID(List<DataTable> listofrecord)
+        {
+            var data =listofrecord.Average(x => x.ProductId);
+            Console.WriteLine("Average rating of ProductId will be :"+data);
+        }
     }
 }

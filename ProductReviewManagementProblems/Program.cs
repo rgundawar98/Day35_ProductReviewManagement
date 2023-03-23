@@ -87,8 +87,11 @@ namespace ProductReviewManagementProblems
             //{
             //    Console.WriteLine("ProductId:"+record.ProductId+" UserId:"+record.UserId+" Rating:"+record.Rating+" Review:"+record.Review+" isLike:"+record.isLike);
             //}
-            Console.WriteLine("Retrive records having isLike value is true");
-            management.Retrive_Records_isLike_True(dataTables);
+            //Console.WriteLine("Retrive records having isLike value is true");
+            //management.Retrive_Records_isLike_True(dataTables);
+            Console.WriteLine("Average rating of PrdouctId");
+            management.Average_Rating_Of_Each_ProductID(dataTables);
+
         }
     }
 }
